@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="toggle">
+<button class="dark-btn" onclick="toggleDarkMode()">🌙 </button></div>  
+
+<div class="main-container">
+
+    <!-- Review Form -->
+    <div class="form-container">
+        <h2>Add a Review</h2>
+
+        <input type="text" id="username" placeholder="Enter your name">
+        
+        <textarea id="comment" placeholder="Write your review"></textarea>
+        
+        <select id="rating">
+            <option value="">Rating</option>
+            <option value="⭐">⭐</option>
+            <option value="⭐⭐">⭐⭐</option>
+            <option value="⭐⭐⭐">⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <button onclick="addReview()">Submit Review</button>
+    </div>
+
+    <!-- Review Display -->
+    <div class="reviews-container">
+        <h2>Reviews</h2>
+        <div id="reviews"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

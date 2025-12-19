@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Dark button */
+.dark-btn {
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-align: right;
+  
+}
+.toggle {
+    text-align: right;
+    margin-bottom: -40px;
+}
+
+/* Form */
+.form-container {
+    background: white;
+    padding: 20px;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.dark .form-container,
+.dark .review-box {
+    background: #1e1e1e;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Reviews */
+.reviews-container {
+    width: 65%;
+}
+
+.review-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+}
+
+.review-box h4 {
+    margin: 0;
+}
+
+.review-box small {
+    color: gray;
+}
+
+.delete-btn {
+    color: red;
+    cursor: pointer;
+    float: right;
+}
